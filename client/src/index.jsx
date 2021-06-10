@@ -1,11 +1,14 @@
 import ReactDOM from "react-dom";
 import React from "react";
+import Hero from "./components/Hero.jsx";
+import "./styles.css"
 
 function App() {
-
-    return (
-        <h1>Hello World</h1>
-    )
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
 
-ReactDOM.render(<App />, document.getElementById("app"))
+ReactDOM.render(<App />, document.getElementById("app"));

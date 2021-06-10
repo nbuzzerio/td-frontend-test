@@ -1,0 +1,149 @@
+:root {
+  --color-primary: #cb0007;
+  --color-primary-dark: #87191d;
+  --color-secondary: #d8b243;
+  --color-background: #f4f2eb;
+  --color-white: #fff;
+  --color-black: #222;
+  --color-gray: #ccc;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-background);
+  font-size: 2.4rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--color-white);
+  font-family: sans-serif;
+  font-size: 9.5vw;
+  font-weight: normal;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  padding-left: 3vw;
+}
+
+P {
+  color: var(--color-white);
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* Icons */
+.icon {
+  height: 5vw;
+  position: relative;
+  width: 5vw;
+}
+
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* collapsibles */
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/* Nav Bar */
+.nav {
+  align-items: center;
+  background-color: var(--color-white);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0vw 1rem 2vw;
+  position: relative;
+  width: 100vw;
+}
+
+.nav__list {
+  margin: 0;
+  width: 100%;
+}
+
+.nav__item {
+  border-bottom: solid 1px var(--color-gray);
+  padding: 0.5rem 2rem;
+}
+
+.nav__item > a {
+  color: var(--color-black);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(33, 150, 245);
+}
+
+.nav__dropdown {
+  cursor: pointer;
+  fill: var(--color-white);
+  opacity: 0.5;
+  right: 3vw;
+  top: 1vw;
+  transform: translateY(-25%);
+  transition: box-shadow 0.15s;
+}
+
+.nav.collapsible--expanded .nav__dropdown {
+  border-radius: 5px;
+  box-shadow: 0 0 0 3px var(--color-primary);
+  opacity: 1;
+}
+
+.nav__logo {
+  height: 9.5vw;
+  margin-bottom: 3vw;
+  transform: translate(5vw, 27%);
+}
+
+.login__container {
+  display: flex;
+  position: absolute;
+  right: 12vw;
+  top: 5vw;
+}
+
+.socials {
+  display: flex;
+  transform: translateY(-75%);
+}
+
+.login {
+  color: var(--color-black);
+  transform: translateY(-9%);
+}
+
+.social {
+  padding: 0 1vw;
+}
