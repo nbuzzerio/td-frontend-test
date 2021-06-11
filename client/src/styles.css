@@ -147,3 +147,51 @@ P {
 .social {
   padding: 0 1vw;
 }
+
+@media screen and (min-width: 900px) {
+  #hero {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav {
+    height: 15rem;
+  }
+
+  .nav__dropdown {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+    transform: translateY(65%);
+  }
+
+  .nav__item {
+    border: 0;
+  }
+
+  .nav__logo {
+    height: 10rem;
+    margin-bottom: 3vw;
+    transform: translate(5vw, 20%);
+  }
+
+  .login__container {
+    display: flex;
+    position: absolute;
+    right: 4rem;
+    top: 4rem;
+  }
+
+  .login {
+    font-size: 1.8rem;
+    transform: translateY(0%);
+  }
+}
