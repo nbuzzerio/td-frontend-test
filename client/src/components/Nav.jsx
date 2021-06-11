@@ -30,7 +30,8 @@ function Nav() {
             </li>
           </ul>
           <div className="login">
-            | Log In <img src="./images/chiron.svg" />
+            <span className="social">|</span>Log In{" "}
+            <img src="./images/chiron.svg" />
           </div>
         </div>
         <img
