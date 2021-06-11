@@ -437,6 +437,7 @@ p {
     max-height: 550px;
     max-width: 1200px;
     padding-left: 2%;
+    z-index: 1;
   }
 
   .about__image {
@@ -485,5 +486,15 @@ p {
     display: flex;
     justify-content: center;
     color: var(--color-gray);
+  }
+
+  .accent-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    height: 720px;
+    width: 73%;
+    max-width: 960px;
   }
 }

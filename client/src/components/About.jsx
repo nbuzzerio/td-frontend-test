@@ -3,6 +3,7 @@ import React from "react";
 function About() {
   return (
     <section id="about">
+      <div className="accent-background"></div>
       <div className="about__container">
         <img src="./images/shutterstock.png" alt="" className="about__image" />
         <div className="about__text">
